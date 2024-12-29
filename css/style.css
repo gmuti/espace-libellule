@@ -4026,8 +4026,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-brand  img {
-    width: 100px;
-    height: 100px;
+    height: 4.6rem;
 }
 
 .navbar-nav {
@@ -6166,6 +6165,12 @@ button.bg-light:focus {
   background-color: #211E1C !important;
 }
 
+.footer {
+  background-image: url("/spa-html-template/img/dd.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
@@ -6262,6 +6267,9 @@ button.bg-dark:focus {
 
 .rounded {
   border-radius: 0.25rem !important;
+}
+.arrondis {
+  border-radius: 50% !important;
 }
 
 .rounded-top {
@@ -9715,7 +9723,6 @@ h6,
 
 .row-soin{
   display: flex;
-  flex-direction: row;
   padding: 0.5rem 8rem;
 }
 
