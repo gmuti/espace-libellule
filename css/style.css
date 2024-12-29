@@ -6166,7 +6166,7 @@ button.bg-light:focus {
 }
 
 .footer {
-  background-image: url("/spa-html-template/img/dd.png") !important;
+  background-image: url("../img/dd.png") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }
