@@ -19,7 +19,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #aa7444;
+  --primary: #c4a893;
   --secondary: #6EBBF6;
   --success: #28a745;
   --info: #17a2b8;
@@ -61,7 +61,7 @@ body {
   line-height: 1.5;
   color: #757575;
   text-align: left;
-  background-color: #fff;
+  background-color: #c4a893;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -360,11 +360,11 @@ template {
 }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .h4, .h5 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-  color: #211E1C;
+  color: white;
 }
 
 h1, .h1 {
@@ -6155,6 +6155,10 @@ button.bg-danger:focus {
   background-color: #f1e7d6 !important;
 }
 
+.bg-light2 {
+  background-color: #ffffff !important;
+}
+
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
 button.bg-light:focus {
@@ -6170,6 +6174,15 @@ button.bg-light:focus {
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
@@ -6178,7 +6191,7 @@ button.bg-dark:focus {
 }
 
 .bg-white {
-  background-color: #f1e7d6 !important;
+  background-color: white !important;
 }
 
 .bg-transparent {
@@ -9613,10 +9626,12 @@ h6,
 }
 
 @media (min-width: 992px) {
-  .hours-text,
-  .pricing-text,
-  .contact-form {
+  .pricing-text {
     margin-left: -120px;
+  }
+  .map{
+    width: 60rem;
+    height: 20rem;
   }
 }
 
@@ -9703,6 +9718,7 @@ h6,
   margin: 1rem auto;
   padding: 2rem 12rem;
   border-radius: 0.5rem;
+  gap: 6rem;
 }
 
 
@@ -9739,7 +9755,7 @@ h6,
 }
 
 .soin{
-  background-color: #f1e7d6;
+  background-color: white;
   text-align: center;
   Padding: 1rem;
 }
@@ -9809,4 +9825,36 @@ h6,
   .price{
     font-size: 1.1rem;
   }
+  .map{
+    width: 20rem;
+    height: 10rem;
+  }
+  .about-section{
+    gap: 2rem;
+  }
+}
+
+.map{
+  margin-bottom: 1rem;
+}
+
+.a-savoir h4{
+  color: #ffffff;
+  text-align: center;
+}
+
+.a-savoir{
+  margin-top: 1rem;
+}
+
+.header p, .text-white{
+  color: white;
+}
+
+.text-black{
+  color: black;
+}
+
+.pdf{
+  margin-top:2rem;
 }
