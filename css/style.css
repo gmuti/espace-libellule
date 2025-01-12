@@ -1818,6 +1818,7 @@ pre code {
   .table-responsive-sm > .table-bordered {
     border: 0;
   }
+
 }
 
 @media (max-width: 767.98px) {
@@ -9633,6 +9634,10 @@ h6,
     width: 60rem;
     height: 20rem;
   }
+  .carte-cadeau{
+    width: 50% !important;
+    margin: 2rem auto !important;
+  }
 }
 
 .team img {
@@ -9855,6 +9860,8 @@ h6,
   color: black;
 }
 
-.pdf{
-  margin-top:2rem;
+.carte-cadeau{
+  width: 85%;
+  border: 2px solid white;
+  margin: 1rem auto;
 }
