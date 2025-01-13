@@ -9837,13 +9837,16 @@ h6,
   .about-section{
     gap: 2rem;
   }
+  .d-none{
+    display: block !important;
+  }
 }
 
 .map{
   margin-bottom: 1rem;
 }
 
-.a-savoir h4{
+.a-savoir p{
   color: #ffffff;
   text-align: center;
 }
