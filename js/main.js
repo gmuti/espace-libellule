@@ -1,3 +1,5 @@
+console.log("main.js chargé ");
+
 (function ($) {
     "use strict";
     
@@ -118,6 +120,34 @@ function sendMail(){
         subject: document.getElementById('subject').value,
         message: document.getElementById('message').value
     };
-    emailjs.send('service_vlyalkj', 'template_tq04wee', parms).then(alert('Email sent successfully!'));
+    emailjs.send('service_vlyalkj', 'template_tq04wee', parms)
+  .then(() => {
+      alert('Email envoyé avec succès !');
+      document.getElementById("contactForm").reset();
+  })
+  .catch((err) => {
+      console.error("Erreur :", err);
+      alert("Une erreur est survenue. Vérifiez la console.");
+  });
+
 }
+
+// gift form 
+function sendGift() {
+    let parms = {
+        amount: document.getElementById('amount').value,
+        recipient: document.getElementById('recipient').value,
+        senderEmail: document.getElementById('senderEmail').value
+    };
+
+    emailjs.send('service_2jcy8kq', 'template_iolrdf8', parms)
+      .then(() => {
+        alert('Bon cadeau envoyé avec succès !');
+      })
+      .catch((err) => {
+        console.error("Erreur :", err);
+        alert('Une erreur est survenue, réessayez plus tard.');
+      });
+}
+
 

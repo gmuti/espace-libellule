@@ -52,19 +52,53 @@
 </div>
 <!-- Navbar End -->
 
+<div class="container-fluid px-0 py-5">
+    <div class="container">
+        <div class="col-lg-6 a-savoir">
+            <p>
+                Offrez un moment de sérénité avec un bon cadeau. Un geste attentionné pour apporter bien-être et douceur à ceux que vous aimez. Pour passer commande, contactez-moi par mail, téléphone ou message.
+            </p>
+            <p>
+                Dès réception du virement, le bon vous sera	envoyé à votre adresse e-mail.
+            </p>
+        </div>
+    </div>
+</div>
+
 <!-- Cadeau Start -->
 <div class="container py-5">
     <div class="row">
-        <img src="img/carte-cadeau.jpg" alt="carte cadeau" class="carte-cadeau
-">
-        <!--div class="col-lg-6">
-            <h2 class="mb-4">Collaboration exclusive avec le salon d’esthétique « Juliette »</h2>
-            <p class="text-white">
-                Je suis ravie de vous annoncer qu’après un soin réalisé chez
-                moi, vous bénéficierez d’une carte avec une remise de 10% sur
-                votre premier soin dans son salon
-            </p>
-        </div-->
+        <img src="img/carte-cadeau2.jpeg" alt="carte cadeau" class="carte-cadeau">
+        <div class="col-lg-6 pt-5 pb-lg-5">
+        <div class="contact-form bg-light p-4 p-lg-5 my-lg-5">
+            <div id="success"></div>
+            
+            <!--
+                <form name="giftForm" id="giftForm" novalidate="novalidate">
+                <div class="form-row">
+                    <div class="col-sm-6 control-group">
+                        <input type="number" class="form-control border-0 p-4" id="amount" placeholder="Valeur du bon cadeau (€)"
+                            required="required" data-validation-required-message="Veuillez entrer la valeur du bon cadeau" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="col-sm-6 control-group">
+                        <input type="text" class="form-control border-0 p-4" id="recipient" placeholder="À qui offrir"
+                            required="required" data-validation-required-message="Veuillez entrer le destinataire" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <input type="email" class="form-control border-0 p-4" id="senderEmail" placeholder="Votre email"
+                        required="required" data-validation-required-message="Veuillez entrer votre email" />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div>
+                    <button class="btn btn-primary py-3 px-4" type="submit" onclick="sendGift()" id="sendGiftButton">Envoyer le bon cadeau</button>
+                </div>
+            </form>
+            -->
+            
+        </div>
     </div>
 </div>
 
@@ -78,7 +112,7 @@
                 </a>
                 <p>Soins en sonothérapie & massages harmonisants </p>
                 <p>Au-dessus du magasin d'Ambiance De Soie </p>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>Rue d’hérinnes 37, 7850 Enghien / Belgique</p>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Chaussée de Bruxelles 359, 1er étage 7850 Enghien / Belgique</p>
                 <p><i class="fa fa-phone-alt mr-2"></i>0471/72.08.94</p>
                 <p><i class="fa fa-envelope mr-2"></i>espacelibellule1@gmail.com</p>
                 <div class="d-flex justify-content-start mt-4">
@@ -113,5 +147,13 @@
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "Uw3rqkaa9PaLhxt4r",
+            });
+        })();
+</script>
 </body>
 </html>
