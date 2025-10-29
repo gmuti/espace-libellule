@@ -1,0 +1,86 @@
+
+/* Bouton Réservation */
+.btn-primary {
+    background: #007bff;
+    border: none;
+    font-weight: 600;
+    padding: 8px 32px;
+}
+
+/* Carrousel multi-cards */
+.carousel-multi {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 12px;
+}
+.carousel-card {
+    width: 320px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 24px;
+    text-align: center;
+    flex-shrink: 0;
+    transition: box-shadow 0.2s;
+}
+.carousel-card:hover {
+    box-shadow: 0 4px 24px rgba(0,123,255,0.12);
+}
+.carousel-card img {
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.carousel-btn {
+    background: #fff;
+    border: 1px solid #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.carousel-btn:hover {
+    background: #007bff;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(0,123,255,0.16);
+}
+
+.back-to-top:hover {
+    background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .navbar-brand img {
+        height: 40px;
+    }
+    .carousel-card {
+        width: 260px;
+        padding: 16px;
+    }
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+@media (max-width: 600px) {
+    .carousel-card {
+        width: 180px;
+        padding: 8px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+}
+

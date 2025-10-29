@@ -1,0 +1,116 @@
+.collage {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+    position: relative;
+    padding: 12px 12px 24px; /* espace de sécurité pour les rotations */
+    margin-bottom: 2rem;
+}
+.collage img {
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform .3s ease, box-shadow .3s ease;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.collage img:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: 0 14px 32px rgba(0,0,0,0.2);
+}
+/* Placement en grille avec léger chevauchement visuel mais contenu dans le conteneur */
+.collage .img-a {
+    grid-column: 1 / span 6; /* ~50% */
+    transform: rotate(-2deg);
+    z-index: 2;
+}
+.collage .img-b {
+    grid-column: 5 / span 7; /* décale vers la droite et passe derrière */
+    margin-top: 24px; /* décalage vertical pour l'effet "désordonné" */
+    transform: rotate(3deg);
+    z-index: 1;
+}
+.collage .img-c {
+    grid-column: 8 / span 5; /* plus à droite, plus petit */
+    margin-top: 24px;
+    transform: rotate(-1deg);
+    z-index: 3;
+}
+
+@media (max-width: 991.98px) {
+    .collage {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 12px;
+        padding: 8px;
+    }
+    .collage .img-a { grid-column: 1 / span 6; transform: none; }
+    .collage .img-b { grid-column: 1 / span 6; margin-top: 0; transform: none; }
+    .collage .img-c { grid-column: 1 / span 6; margin-top: 0; transform: none; }
+}
+
+@media (max-width: 575.98px) {
+    .collage { grid-template-columns: 1fr; }
+}
+
+/* Galerie salle & instruments - images de même taille avec coins arrondis */
+.gallery-simple img {
+    width: 100%;
+    height: 220px; /* hauteur uniforme */
+    object-fit: cover; /* recadrer proprement */
+    border-radius: 15px !important; /* coins arrondis demandés */
+    display: block;
+}
+
+.img-update{
+    display:flex;
+    align-items:center;
+}
+
+.img-update-taille{
+    width:600px;
+}
+.img-update .col-md-6 .img-update-taille{
+    width:500px
+}
+
+
+@media (max-width: 575.98px) {
+    .img-update{
+        flex-direction:column;
+    }
+
+    .img-update-taille{
+        width:250px;
+    }
+    .img-update .col-md-6 .img-update-taille{
+        width:250px
+    }
+}
+
+/* css */
+/* Fixe la taille des images du carousel et maintien un recadrage propre */
+.seances-carousel .service-item img {
+  width: 100%;
+  height: 300px; /* hauteur mobile / par défaut */
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Optionnel: augmente la hauteur sur écrans larges */
+@media (min-width: 768px) {
+  .seances-carousel .service-item img {
+    height: 260px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .seances-carousel .service-item img {
+    height: 320px;
+  }
+}
+
+/* Assure que l'overlay ne déborde pas lors du recadrage */
+.seances-carousel .service-item {
+  overflow: hidden;
+}

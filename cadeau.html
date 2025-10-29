@@ -42,7 +42,17 @@
                 <a href="index.html" class="nav-item nav-link ">Accueil</a>
                 <a href="about.html" class="nav-item nav-link">A propos</a>
                 <a href="sonotherapie.html" class="nav-link">Sonothérapie</a>
-                <a href="massages.html" class="nav-link"> Massages harmonisants</a>
+                <a href="seances-collectives.html" class="nav-link">Séances Collectives</a>
+                <a href="evenements.html" class="nav-link">Événements</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Massages harmonisants</a>
+                    <div class="dropdown-menu">
+                        <a href="30minutes.html" class="dropdown-item">30 minutes</a>
+                        <a href="1heure.html" class="dropdown-item">1 heure</a>
+                        <a href="headspa.html" class="dropdown-item">Head spa</a>
+                        <a href="enduo.html" class="dropdown-item">En duo</a>
+                    </div>
+                </div>
                 <a href="cadeau.html" class="nav-item nav-link active"> Bon cadeau</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
@@ -72,8 +82,7 @@
         <div class="col-lg-6 pt-5 pb-lg-5">
         <div class="contact-form bg-light p-4 p-lg-5 my-lg-5">
             <div id="success"></div>
-            
-            <!--
+
                 <form name="giftForm" id="giftForm" novalidate="novalidate">
                 <div class="form-row">
                     <div class="col-sm-6 control-group">
@@ -93,13 +102,14 @@
                     <p class="help-block text-danger"></p>
                 </div>
                 <div>
-                    <button class="btn btn-primary py-3 px-4" type="submit" onclick="sendGift()" id="sendGiftButton">Envoyer le bon cadeau</button>
+                    <button class="btn btn-primary py-3 px-4" type="submit" id="sendGiftButton">Envoyer le bon cadeau</button>
                 </div>
             </form>
-            -->
+
             
         </div>
     </div>
+</div>
 </div>
 
 <!-- Footer Start -->
@@ -146,7 +156,7 @@
 <script src="mail/contact.js"></script>
 
 <!-- Template Javascript -->
-<script src="js/main.js"></script>
+<!-- Load EmailJS before main.js to ensure emailjs is available when handlers run -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script type="text/javascript">
         (function(){
@@ -155,5 +165,6 @@
             });
         })();
 </script>
+<script src="js/main.js"></script>
 </body>
 </html>

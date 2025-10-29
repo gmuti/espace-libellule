@@ -3206,6 +3206,7 @@ input[type="button"].btn-block {
   background-color: rgb(254 241 239);
 }
 
+  background-color: transparent;
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
@@ -9587,6 +9588,7 @@ h6,
   position: relative;
   margin-top: 40px;
   transition: .5s;
+  height: 300px;
 }
 
 .service-item .service-text {
@@ -9784,6 +9786,11 @@ h6,
   flex-direction: column;
   margin: 1rem 0;
 }
+
+.list-unstyled{
+    color: #757575
+}
+
 .trait{
   width: 3rem;
   height: 0.1rem;
@@ -9885,5 +9892,14 @@ h6,
   margin: 1rem auto;
 }
 
+/* Custom toast utilisé par js/main.js */
+.custom-toast {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  pointer-events: auto;
+  max-width: 320px;
+  word-wrap: break-word;
+}
 
 
