@@ -115,7 +115,7 @@ console.log("main.js chargé ");
         loop: true,
         items: 1
     });
-    
+
 })(jQuery);
 
 // Toast helper: affiche un petit message fixé en haut à droite
